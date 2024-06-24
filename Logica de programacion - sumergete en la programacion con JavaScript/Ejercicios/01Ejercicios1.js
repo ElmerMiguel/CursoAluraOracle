@@ -26,6 +26,16 @@ let mensajeDeError = "Error, complete todos los campos!!";
 
 //Utiliza un prompt para preguntar el nombre del usuario y almacénalo en la variable nombre .
 nombre = prompt("Cual es tu nombre?");
-alert (nombre);
 
 
+//Pide al usuario que ingrese su edad usando un prompt y almacénala en la variable edad.
+edad = prompt("Ingrese su edad");
+
+/*Ahora, si la edad es mayor o igual a 18, muestra una alerta con el mensaje 
+"¡Puedes obtener tu licencia de conducir!".*/
+
+if(edad>=18){
+    alert("Puedes obtener tu licencia");
+} else {
+    alert("No puedes obtener tu licencia");
+}
