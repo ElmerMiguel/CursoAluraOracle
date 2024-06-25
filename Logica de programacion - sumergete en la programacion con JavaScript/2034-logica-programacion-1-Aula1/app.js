@@ -1,5 +1,5 @@
-let numeroSecreto = 6;
-let numeroUsuario = prompt ("Ingrese el numero");
+let numeroSecreto = 4;
+let numeroUsuario = prompt ('Ingrese el numero entre 1 y 10');
 
 //alert ("Hola mundo"); //alerta, imprimir
 
@@ -7,5 +7,7 @@ let numeroUsuario = prompt ("Ingrese el numero");
 console.log(numeroUsuario);
 
 if (numeroUsuario == numeroSecreto) {
-    alert("Acertaste el numero");
+    alert(`Acertaste, el numero es: ${numeroSecreto}` );
+} else {
+    alert('No arcertaste el numero');
 }

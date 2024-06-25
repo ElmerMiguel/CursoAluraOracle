@@ -2,11 +2,11 @@
 
 <br>
 
-## **1. Iniciando con JS**
+## **1. INICIANDO CON JS**
 
 <br>
 
-## 04 - variables
+### 04 - variables
 
 Un proyecto web basico se basa en estas 3 partes
 - app.js -> es donde va todo de js
@@ -63,10 +63,39 @@ En este curso unicamente usaremos **let**
 
 - --
 
-## Condición if
+### Condición if
 
     console.log(numeroUsuario); 
 
 lo usamos para mostrar los datos por consola, seria como un print, pero para js.
 
+
+- ---
+## **2. CONDICIONALES Y CONCATENACION**
+
+### Comentarios y else
+Los comentarios se hacen con *//*
+
+*else* es para la condicion no se cumple
+
+<br>
+
+### Template Strings
+Las plantillas de cadena, mejor conocidas como **template strings,**son una forma más fácil de crear:
+
+- Cadenas con variables dentro (interpolación).
+- Generar cadenas multilínea.
+- Ejecutar expresiones, funciones y etiquetados.
+
+Las template strings se escriben entre comillas invertidas `` , y permiten incluir variables dentro de la cadena de texto usando la sintaxis   
+
+    ${variable}`.   
+
+Esto permite concatenar el texto "Acertaste, el número es:" con el valor de la variable numeroUsuario para mostrar un mensaje más informativo al usuario.
+Además, se menciona que dentro de las llaves ${} se puede colocar código JavaScript más complejo, no solo variables.
+
+<br>
+
+### Live server
+Es una exension para visualizar en tiempo real nuestra web. Funciona sin una alerta abierta.
 
