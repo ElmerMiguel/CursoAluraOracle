@@ -6,7 +6,7 @@
 
 <br>
 
-### 04 - variables
+### variables
 
 Un proyecto web basico se basa en estas 3 partes
 - app.js -> es donde va todo de js
@@ -99,3 +99,11 @@ Además, se menciona que dentro de las llaves ${} se puede colocar código JavaS
 ### Live server
 Es una exension para visualizar en tiempo real nuestra web. Funciona sin una alerta abierta.
 
+<br>
+
+- ---
+
+## **3. LOOPS Y TENTATIVAS**
+
+### While
+Los "while" en JavaScript. Estos bucles nos permiten repetir un bloque de código mientras una condición sea verdadera.
