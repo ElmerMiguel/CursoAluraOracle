@@ -9,6 +9,7 @@
 ### variables
 
 Un proyecto web basico se basa en estas 3 partes
+
 - app.js -> es donde va todo de js
 - style.css -> donde van los estilos
 - index.html -> el esqueleto de la pagina
@@ -42,7 +43,7 @@ donde src es el origen del js
 **promt**
 
 nos sirve para entrada de dato, espacio de rellenar
-    
+
     prompt("Cual es el numero?"); //espacio de entrada
 
 <br>
@@ -69,11 +70,12 @@ En este curso unicamente usaremos **let**
 
 lo usamos para mostrar los datos por consola, seria como un print, pero para js.
 
-
 - ---
+
 ## **2. CONDICIONALES Y CONCATENACION**
 
 ### Comentarios y else
+
 Los comentarios se hacen con *//*
 
 *else* es para la condicion no se cumple
@@ -81,6 +83,7 @@ Los comentarios se hacen con *//*
 <br>
 
 ### Template Strings
+
 Las plantillas de cadena, mejor conocidas como **template strings,**son una forma más fácil de crear:
 
 - Cadenas con variables dentro (interpolación).
@@ -97,6 +100,7 @@ Además, se menciona que dentro de las llaves ${} se puede colocar código JavaS
 <br>
 
 ### Live server
+
 Es una exension para visualizar en tiempo real nuestra web. Funciona sin una alerta abierta.
 
 <br>
@@ -106,4 +110,124 @@ Es una exension para visualizar en tiempo real nuestra web. Funciona sin una ale
 ## **3. LOOPS Y TENTATIVAS**
 
 ### While
+
 Los "while" en JavaScript. Estos bucles nos permiten repetir un bloque de código mientras una condición sea verdadera.
+
+<br>
+
+### Contador de intentos.
+
+para realizar un contador, podemos declarar primero la variable, luego ir incrementado su valor en cada iteracion, en este caso, como: 
+
+    intentos=intentos+1;
+
+Saber cómo trabajar con bucles de repetición, como el 'while', es esencial en la programación. Los bucles permiten automatizar tareas repetitivas y manejar grandes cantidades de datos de manera eficiente.
+
+Sin embargo, es importante utilizarlos con precaución para evitar bucles infinitos (cuando la condición nunca se vuelve falsa, lo que puede bloquear el programa).
+
+Siempre se recomienda tener una lógica que eventualmente haga que la condición se vuelva falsa para que el bucle termine correctamente.
+
+<br>
+
+### Operadores logicos.
+
+- **AND (&&)**
+
+El operador AND, representado por el símbolo "&&", se utiliza para combinar dos condiciones y evaluar si ambas son verdaderas. Si ambas condiciones son verdaderas, el resultado será... verdadero. De lo contrario, lógicamente será falso. Por ejemplo:
+
+```js
+let edad = 25;
+let tieneLicencia = true;
+
+// si la edad es mayor de 18 y tiene una licencia...
+if (edad > 18 && tieneLicencia) {
+  console.log("Puede conducir!");
+} else {
+  console.log("No puede conducir!");
+}
+```
+
+- **OR( | | )**
+
+El operador OR, representado por los símbolos "||", se utiliza para verificar si al menos una de las condiciones es verdadera. Si una de las condiciones es verdadera, el resultado será verdadero. Si ambas son falsas, el resultado será falso. Aquí tienes un ejemplo: let tieneManzana = false; let tieneBanana = true;
+
+```js
+// si tiene manzana o tiene banama…
+if (tieneManzana|| tieneBanana) {
+  console.log("Tienes frutas!");
+} else {
+  console.log("No tienes frutas.");
+}
+```
+
+- **Otros tipos de operadores lógicos**
+
+| **Operador** | **Nombre**    | **Ejemplo** | **Resultado**                       |
+|:------------:|:-------------:|:-----------:| ----------------------------------- |
+| ==           | Igual         | A == B      | Verdadero si A es igual a B         |
+| !=           | Diferente     | A != B      | Verdadero si A no es igual a B      |
+| <            | Menor que     | A < B       | Verdadero si A es menor que B       |
+| >            | Mayor que     | A > B       | Verdadero si A es mayor que B       |
+| <=           | Menor o Igual | A <= B      | Verdadero si A es menor o igual a B |
+| >=           | Mayor o igual | A >=B       | Verdadero si A es mayor o igual a B |
+
+**Operadores Logicos**
+
+| **Operador** | **Nombre** | **Ejemplo**         | **Resultado**                                  |
+|:------------:|:----------:|:-------------------:| ---------------------------------------------- |
+| &&           | Y / AND    | (A > B) && (B == C) | Verdadero si A es mayor que B y B es igual a C |
+| ll           | O / OR     | (A > B) ll (B == C) | Verdadero si A es mayor que B o B es igual a C |
+| !            | NEGACION   | !(A ==B)            | Verdadero si A NO es igual a B                 |
+
+<br>
+
+- ---
+
+## **4. BUENAS PRACTICAS DE PROGRAMACION**
+
+### Break
+
+Break nos permite salir de un bucle while de forma forzada, incluso si la condición del bucle aún no se ha cumplido.  Un ejemplo pordria ser: 
+
+```js
+if(intentos > 3) { 
+    alert('Llegaste al numero maximo de intentos');
+    break; // rompe el bucle
+    }
+```
+
+### Operadores ternarios
+
+**Buenas prácticas en programación (JavaScript)**
+
+- **Variables en lugar de valores literales:**
+  
+  - Define variables para valores que pueden cambiar, como el número máximo de intentos.
+  - Ejemplo: `maximosIntentos = 3;`
+
+- **Template strings:**
+  
+  - Usa comillas invertidas ( `` ) para incluir variables y código JavaScript dentro de cadenas de texto.
+  
+  - Ejemplo:   
+    
+    ```js
+    console.log(Llegaste al número máximo de ${maximosIntentos} intentos);
+    ```
+
+- **Incrementar contadores:**
+  
+  - Usa `intentos++` para incrementar un contador en 1.
+  - Es más conciso que `intentos += 1` e  `intentos = intentos + 1` .
+
+- **Operador ternario:**
+  
+  - Simplifica condiciones con una sintaxis abreviada.
+  
+  - Sintaxis: `condición ? valorSiVerdadero : valorSiFalso`
+  
+  - Ejemplo: 
+    
+    ```js
+    console.log(Intentos: ${intentos > 1 ? "veces" : "vez"});
+    ```
