@@ -1,14 +1,17 @@
-let numeroSecreto = 4;
+let numeroSecreto = Math.floor(Math.random()*10+1);
 let numeroUsuario =0;
 let intentos = 1;
 // let palabraVeces = 'vez';
 
-let maximosIntentos = 5; //como buena practica darle una var a intento para poderlo modifcar a gusto y facil
+let maximosIntentos = 3; //como buena practica darle una var a intento para poderlo modifcar a gusto y facil
+
+//console.log(numeroSecreto);
 
 while (numeroUsuario!=numeroSecreto) {
-    numeroUsuario = prompt ('Ingrese el numero entre 1 y 10');
+    numeroUsuario = parseInt(prompt ('Ingrese el numero entre 1 y 10')); //parseInt para converterlo a tipo dato numerico entero
  
-    console.log(numeroUsuario);
+    //console.log(numeroUsuario);
+    console.log(typeof(numeroUsuario));
 
     if (numeroUsuario == numeroSecreto) {
         alert(`Acertaste, el numero es: ${numeroSecreto}. lo hiciste en ${intentos} ${intentos ==1 ? 'vez' : 'veces'}` ); // usamos ternario para mostrar si es vez o veces
@@ -26,7 +29,7 @@ while (numeroUsuario!=numeroSecreto) {
         // palabraVeces = 'veces';
 
         if(intentos > maximosIntentos) { //uso de la var de maximoIntentos que rompe el while
-            alert(`Llegaste al numero maximo de ${maximosIntentos} intentos`);
+            alert(`Llegaste al numero maximo de ${maximosIntentos} intentos, el numero era ${numeroSecreto}`);
             break; // rompe el bucle
         }
         

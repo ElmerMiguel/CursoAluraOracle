@@ -231,3 +231,48 @@ if(intentos > 3) {
     ```js
     console.log(Intentos: ${intentos > 1 ? "veces" : "vez"});
     ```
+
+### Math.random()
+
+**Generación de números aleatorios en JavaScript**
+
+- **`Math.random()`:** Genera un número decimal aleatorio entre 0 (incluido) y 1 (excluido).
+- **Para obtener un número aleatorio entre 1 y 10:**
+  - Multiplica `Math.random()` por 10.
+  - Usa `Math.floor()` para obtener el número entero más cercano hacia abajo.
+  - Suma 1 al resultado.
+
+**Ejemplo:**
+
+```js
+Math.floor(Math.random() * 10) + 1;
+```
+
+**Explicación:**
+
+1. `Math.random() * 10`: Genera un número decimal aleatorio entre 0 y 9.999999.
+2. `Math.floor(...)`: Convierte el número decimal a un entero, redondeando hacia abajo.
+3. `... + 1`: Suma 1 al resultado para obtener un número entre 1 y 10.
+
+### Math.random() en nuestro codigo
+
+**Buenas prácticas en programación: `Math.random()` en nuestro código**
+
+- **Generar números aleatorios:**
+  
+  - Usar `Math.random()` para generar un número aleatorio entre 0 y 1.
+  - Usar `Math.floor()` para redondear el número aleatorio al entero más cercano.
+  - Ejemplo: `Math.floor(Math.random() * 10) + 1` genera un número aleatorio entre 1 y 10.
+
+- **Tipos de datos:**
+  
+  - `prompt()` devuelve una cadena de texto (*string*).
+  - Usar `parseInt()` para convertir una cadena de texto a un número entero.
+  - Ejemplo: `parseInt(prompt("Escribe un número: "))` convierte la entrada del usuario a un número entero.
+
+- **Comparación de tipos de datos:**
+  
+  - Usar el operador `===` para comparar valores y tipos de datos.
+  - Tener cuidado con los tipos de datos al comparar o realizar operaciones matemáticas.
+  
+  
