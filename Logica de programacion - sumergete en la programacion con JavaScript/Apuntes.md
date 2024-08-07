@@ -274,5 +274,3 @@ Math.floor(Math.random() * 10) + 1;
   
   - Usar el operador `===` para comparar valores y tipos de datos.
   - Tener cuidado con los tipos de datos al comparar o realizar operaciones matemáticas.
-  
-  
