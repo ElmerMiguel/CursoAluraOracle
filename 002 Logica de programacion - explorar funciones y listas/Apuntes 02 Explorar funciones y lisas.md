@@ -129,3 +129,146 @@ function intentoDeUsuario() {
 - **HTML:** Estructura el contenido.
 - **CSS:** Define el estilo y el diseño.
 - **JavaScript:** Agrega funcionalidades dinámicas.
+
+<br>
+
+## **2. Funciones**
+
+### Funciones para asignar texto a elementos HTML
+
+- **Objetivo:** Optimizar el código y hacerlo más reutilizable.
+- **Creación de la función:**
+  - `asignarTextoElemento(elemento, texto)`: Recibe dos parámetros: el elemento HTML y el texto a asignar.
+  - Dentro de la función:
+    - Se utiliza `document.querySelector(elemento)` para seleccionar el elemento HTML, no va a haber una etiqueta fija, no va a haber un texto fijo.
+    - Se asigna el texto al elemento usando `elementoHTML.innerHTML = texto`.
+- **Llamada a la función:**
+  - `asignarTextoElemento('h1', 'Juego del número secreto')`: Se pasa el elemento HTML y el texto como parámetros.
+- **Beneficios:**
+  - Código más limpio y organizado.
+  - Mayor eficiencia al reutilizar la función.
+  - Facilita el mantenimiento del código. 
+  - Al usar parametro el comportamiento de la funcion se va a modificar de acuerdo a lo que reciba.
+
+**Ejemplo:**
+
+```js
+function asignarTextoElemento(elemento, texto) {
+  let elementoHTML = document.querySelector(elemento);
+  elementoHTML.innerHTML = texto;
+}
+
+asignarTextoElemento('h1', 'Juego del número secreto');
+asignarTextoElemento('p', '1 a 100');
+```
+
+<br>
+
+### Generar numero aleatorio
+
+**Función `GenerarNumeroSecreto()`**
+
+- Genera un número aleatorio entre 1 y 10.
+
+- Utiliza la librería `Math` de JavaScript:
+  
+  - `Math.random()`: Genera un número aleatorio entre 0 y 1 (excluyendo el 1).
+  - `Math.floor()`: Redondea un número hacia abajo.
+
+- Código:
+
+```javascript
+function GenerarNumeroSecreto() {
+  let numeroSecreto = Math.floor(Math.random() * 10) + 1;
+  return numeroSecreto;
+}
+```
+
+**Alcance de las variables**
+
+- **Alcance global:** Las variables declaradas fuera de una función están disponibles en todo el programa.
+- **Alcance de bloque:** Las variables declaradas dentro de una función solo están disponibles dentro de esa función.
+
+**`console.log`**
+
+- Muestra el valor de una variable en la consola del navegador.
+- Se utiliza para depurar el código y verificar que las funciones están funcionando correctamente.
+
+**Ejemplo:**
+
+```javascript
+let numeroSecreto = GenerarNumeroSecreto();
+console.log(numeroSecreto);
+```
+
+<br>
+
+### Capturar el valor del input:
+
+- **`getElementById`:** Esta función de JavaScript nos permite obtener un elemento HTML por su ID.
+- **`document.getElementById("id_del_elemento")`:** Usamos esta sintaxis para acceder al elemento con el ID especificado.
+- **`value`:** Para obtener el valor del input, usamos la propiedad `value` del elemento.
+
+**Convertir el valor del input a número:**
+
+- **`parseInt`:** Esta función convierte un string a un número entero.
+- **`parseInt(valor_del_input)`:** Usamos esta sintaxis para convertir el valor del input a un número.
+
+**Comparación con el número secreto:**
+
+- **`===`:** El operador de comparación triple igual verifica si dos valores son iguales en valor y en tipo de datos.
+- **`valor_del_input === numero_secreto`:** Usamos esta sintaxis para comparar el valor del input con el número secreto.
+
+**Ejemplo:**
+
+```javascript
+// Obtener el valor del input
+let valorUsuario = document.getElementById("numeroUsuario").value;
+
+// Convertir el valor a número
+let numeroUsuario = parseInt(valorUsuario);
+
+// Comparar con el número secreto
+if (numeroUsuario === numeroSecreto) {
+  // El usuario acertó
+} else {
+  // El usuario no acertó
+}
+```
+
+<br>
+
+### **Capturar el valor del input:**
+
+- **`getElementById`:** Esta función de JavaScript nos permite obtener un elemento HTML por su ID.
+- **`document.getElementById("id_del_elemento")`:** Usamos esta sintaxis para acceder al elemento con el ID especificado.
+- **`value`:** Para obtener el valor del input, usamos la propiedad `value` del elemento.
+
+**Convertir el valor del input a número:**
+
+- **`parseInt`:** Esta función convierte un string a un número entero.
+- **`parseInt(valor_del_input)`:** Usamos esta sintaxis para convertir el valor del input a un número.
+
+**Comparación con el número secreto:**
+
+- **`===`:** El operador de comparación triple igual verifica si dos valores son iguales en valor y en tipo de datos.
+- **`valor_del_input === numero_secreto`:** Usamos esta sintaxis para comparar el valor del input con el número secreto.
+
+**Ejemplo:**
+
+
+
+```javascript
+// Obtener el valor del input
+let valorUsuario = document.getElementById("numeroUsuario").value;
+
+// Convertir el valor a número
+let numeroUsuario = parseInt(valorUsuario);
+
+// Comparar con el número secreto
+if (numeroUsuario === numeroSecreto) {
+  // El usuario acertó
+} else {
+  // El usuario no acertó
+}
+```
