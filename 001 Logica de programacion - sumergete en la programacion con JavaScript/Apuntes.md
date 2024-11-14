@@ -84,7 +84,7 @@ Los comentarios se hacen con *//*
 
 ### Template Strings
 
-Las plantillas de cadena, mejor conocidas como **template strings,**son una forma más fácil de crear:
+Las plantillas de cadena, mejor conocidas como **template strings,** son una forma más fácil de crear:
 
 - Cadenas con variables dentro (interpolación).
 - Generar cadenas multilínea.
@@ -92,7 +92,7 @@ Las plantillas de cadena, mejor conocidas como **template strings,**son una form
 
 Las template strings se escriben entre comillas invertidas `` , y permiten incluir variables dentro de la cadena de texto usando la sintaxis   
 
-    ${variable}`.   
+    `texto ${variable}`   
 
 Esto permite concatenar el texto "Acertaste, el número es:" con el valor de la variable numeroUsuario para mostrar un mensaje más informativo al usuario.
 Además, se menciona que dentro de las llaves ${} se puede colocar código JavaScript más complejo, no solo variables.

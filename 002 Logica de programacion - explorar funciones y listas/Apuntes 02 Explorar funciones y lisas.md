@@ -256,8 +256,6 @@ if (numeroUsuario === numeroSecreto) {
 
 **Ejemplo:**
 
-
-
 ```javascript
 // Obtener el valor del input
 let valorUsuario = document.getElementById("numeroUsuario").value;
